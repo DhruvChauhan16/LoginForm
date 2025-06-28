@@ -1,1 +1,120 @@
-# LoginForm
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form class="form-box">
+      <h2>Login</h2>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Ex: abc@gmail.com" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required />
+
+      <button type="submit">Login</button>
+
+      <p class="switch">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </form>
+  </div>
+  <div class="container">
+    <form class="form-box">
+      <h2>Sign Up</h2>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Ex: Sidhart singh" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Ex: abc@gmail.com" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Create a password" required />
+
+      <button type="submit">Sign Up</button>
+
+      <p class="switch">Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+</body>
+</html>
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url('.vscode/Bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgb(43, 68, 211);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  color: #000000;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+.switch {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.switch a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
